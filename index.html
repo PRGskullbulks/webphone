@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<body>
+<center>
+<input type="button" value="clic aqui para realizar llamadas" id="launchPhone" text="iniciar telefono" />
+</center>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+localStorage.setItem('SIPCreds','{"Display":"test","User":"101","WSServer":"wss://sip.phonehub.com.co:24443/ws","Pass":"S0p0rt3s0s.","Realm":"phonehub"}');
+var url      = '/phone',
+    features = 'menubar=no,location=no,resizable=no,scrollbars=no,status=no,addressbar=no,width=320,height=480';
+
+    $('#launchPhone').on('click', function(event) {
+        event.preventDefault();
+        // This is set when the phone is open and removed on close
+        if (!localStorage.getItem('ctxPhone')) {
+            window.open(url, 'ctxPhone', features);
+            return false;
+        } else {
+            window.alert('Phone already open.');
+        }
+    });
+
+</script>
+</html>
+
