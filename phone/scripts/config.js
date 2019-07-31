@@ -2,11 +2,11 @@ var user = {
     //  User Name
     "User" : "101",
     //  Password
-    "Pass" : "S0p0rt3s0s.",
+    "Pass" : "oPzoFz-Y_5J",
     //  Auth Realm
-    "Realm"   : "phonehub",
+    "Realm"   : "llamagratis",
     // Display Name
     "Display" : "Sip Softphone",
     // WebSocket URL
-    "WSServer"  : "wss://sip.phonehub.com.co:24443/ws"
+    "WSServer"  : "wss://www.llamagratis.co:24443/ws"
 };
